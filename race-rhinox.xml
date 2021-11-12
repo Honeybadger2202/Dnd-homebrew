@@ -2,18 +2,14 @@
 <elements>
 	<info>
         <name>Rhinox</name>
-        <description></description>
         <update version="0.1.0">
             <file name="race-rhinox.xml" url="https://raw.githubusercontent.com/Honeybadger2202/Dnd-homebrew/main/race-rhinox.xml" />
         </update>
     </info>
 	
-	<element name="Rhinox" type="Race" source="user" id="ID_RACE_RHINOX">
-	<supports />
-    <requirements />	
-	<description>
+	<element name="Rhinox" type="Race" source="user" id="ID_RACE_RHINOX">	
+		<description>
 			<p class="flavor">The rhinox are a group of humanoids with the thick hides, and heads of a rhinoceros, complete with a large single horn protruding from the tops of their head. Rhinox rear their young in family groups called a crash, and travel wide savannahs chasing seasons and favored tastes in fruit, berries and green, leafy plants. A rhinox is not born with a horn. The horn begins to grow at when a young rhinox reach adolescence, usually at around six years of age, and reaches full size around the time a rhinox reaches adulthood two years later. Urban rhinox are rare, as most prefer the wind and solitude of the open savannah, where their considerable bulk is not considered a nuisance. Rhinox are so large and heavy that most furniture cannot withstand their weight, and fitting through doorways meant for most humanoids can be a daily challenge for them. Most rhinox revere and even worship fey, from which they are descended.</p>
-			
 			<h4>RHINOX TRAITS</h4>
 			<p class="indent"><strong><em>Ability Score Increase.</em></strong>Your Strength score increases by 2, and two other Ability Scores of your choice increase by 1.</p>
 			<p class="indent"><strong><em>Age.</em></strong>Rhinox mature at 8 years, and live up to 60 years.</p>
@@ -42,7 +38,7 @@
 		</rules>
 	</element>
 	
-	<element name="Fey Ancestry" type="Racial Trait" id="ID_RACIAL_TRAIT_RHINOX_FEY_ANCESTRY">
+	<element name="Fey Ancestry" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_RHINOX_FEY_ANCESTRY">
 		<description>
 			<p>You have advantage on saving throws against being charmed, and magic can’t put you to sleep.</p>
 		</description>
@@ -61,7 +57,7 @@
 		</rules>
 	</element>
 	
-	<element name="Cantrip" type="Racial Trait" id="ID_RACIAL_TRAIT_CANTRIP">
+	<element name="Cantrip" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_CANTRIP">
 		<description>
 			<p>You know one cantrip of your choice from the druid spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).</p>
 		</description>
@@ -73,7 +69,7 @@
 		</rules>
 	</element>
 	
-	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_RHINOX_STRENGTH">
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_STRENGTH">
 		<compendium display="false" />
 		<supports>Rhinox</supports>
 		<description>
@@ -84,7 +80,7 @@
 		</rules>
 	</element>
 	
-	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_RHINOX_DEXTERITY">
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_DEXTERITY">
 		<compendium display="false" />
 		<supports>Rhinox</supports>
 		<description>
@@ -95,7 +91,7 @@
 		</rules>
 	</element>
 	
-	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_RHINOX_CONSTITUTION">
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_CONSTITUTION">
 		<compendium display="false" />
 		<supports>Rhinox</supports>
 		<description>
@@ -106,7 +102,7 @@
 		</rules>
 	</element>
 	
-	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_RHINOX_INTELLIGENCE">
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_INTELLIGENCE">
 		<compendium display="false" />
 		<supports>Rhinox</supports>
 		<description>
@@ -117,7 +113,7 @@
 		</rules>
 	</element>
 	
-	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_RHINOX_WISDOM">
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_WISDOM">
 		<compendium display="false" />
 		<supports>Rhinox</supports>
 		<description>

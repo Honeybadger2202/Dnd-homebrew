@@ -4,7 +4,7 @@
         <name>Rhinox</name>
         <description></description>
         <update version="0.1.0">
-            <file name="race-rhinox.xml" />
+            <file name="race-rhinox.xml" url="https://raw.githubusercontent.com/Honeybadger2202/Dnd-homebrew/main/race-rhinox.xml" />
         </update>
     </info>
 	

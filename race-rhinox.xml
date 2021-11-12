@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+        <name>Rhinox</name>
+        <description></description>
+        <update version="0.1.0">
+            <file name="race-rhinox.xml" />
+        </update>
+    </info>
+	
+	<element name="Rhinox" type="Race" source="user" id="ID_RACE_RHINOX">
+	<supports />
+    <requirements />	
+	<description>
+			<p class="flavor">The rhinox are a group of humanoids with the thick hides, and heads of a rhinoceros, complete with a large single horn protruding from the tops of their head. Rhinox rear their young in family groups called a crash, and travel wide savannahs chasing seasons and favored tastes in fruit, berries and green, leafy plants. A rhinox is not born with a horn. The horn begins to grow at when a young rhinox reach adolescence, usually at around six years of age, and reaches full size around the time a rhinox reaches adulthood two years later. Urban rhinox are rare, as most prefer the wind and solitude of the open savannah, where their considerable bulk is not considered a nuisance. Rhinox are so large and heavy that most furniture cannot withstand their weight, and fitting through doorways meant for most humanoids can be a daily challenge for them. Most rhinox revere and even worship fey, from which they are descended.</p>
+			
+			<h4>RHINOX TRAITS</h4>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong>Your Strength score increases by 2, and two other Ability Scores of your choice increase by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong>Rhinox mature at 8 years, and live up to 60 years.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong>Rhinox’s sense of honor and gentle nature usually lead them toward a life of good. Evil rhinox are rare and are usually the sworn enemies of the rest of their kind.</p>
+			<p class="indent"><strong><em>Size.</em></strong>Rhinox stand between 6 and 8 feet tall, and weigh 300-400 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong>Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Keen Smell.</em></strong>You have advantage on checks you make with the Wisdom (Perception) or Intelligence(Investigation) skills that rely on smell.</p>
+			<p class="indent"><strong><em>Powerful Build.</em></strong>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+			<p class="indent"><strong><em>Horn.</em></strong>You have a large single horn on your head, with which you can make gore attacks, dealing 1d6 + your Strength modifier in piercing damage.</p>
+			<p class="indent"><strong><em>Trampling Charge.</em></strong>If you move at least 20 feet in a straight line toward a large or smaller creature and hit them with a horn attack, they must succeed a Strength saving throw DC 8 + your proficiency bonus + your Strength modifier or be knocked prone.</p>
+			<p class="indent"><strong><em>Pachyderm.</em></strong>You have thick, leathery skin. When you aren’t wearing armor, your AC is 13 + your Dexterity modifier. If you are using a shield, you can apply the shield's bonus as normal.</p>
+			<p class="indent"><strong><em>Fey Ancestry.</em></strong>You have advantage on saving throws you make to avoid or end the charmed condition on yourself.</p>
+			<p class="indent"><strong><em>Cantrip.</em></strong>You know one cantrip of your choice from the druid spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="2"/>
+			<select type="Racial Trait" name="Ability Score Increase (RHINOX)" supports="RHINOX" number="2"/>
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_RHINOX" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_RHINOX_FEY_ANCESTRY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_CANTRIP" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SKILL_VERSATILITY" />
+		</rules>
+	</element>
+	
+	<element name="Fey Ancestry" type="Racial Trait" id="ID_RACIAL_TRAIT_RHINOX_FEY_ANCESTRY">
+		<description>
+			<p>You have advantage on saving throws against being charmed, and magic can’t put you to sleep.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against being charmed, and magic can’t put you to sleep.</description>
+		</sheet>
+	</element>
+	
+	<element name="Skill Versatility" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_SKILL_VERSATILITY">
+		<description>
+			<p>You gain proficiency in two skills of your choice.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Rhinox)" supports="Skill" number="2" />
+		</rules>
+	</element>
+	
+	<element name="Cantrip" type="Racial Trait" id="ID_RACIAL_TRAIT_CANTRIP">
+		<description>
+			<p>You know one cantrip of your choice from the druid spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).</p>
+		</description>
+		<sheet display="false">
+			<description>You know one cantrip of your choice from the druid spell list. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose when you select this race).</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Druid Cantrip (Rhinox)" supports="Druid&amp;&amp;0" />
+		</rules>
+	</element>
+	
+	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_RHINOX_STRENGTH">
+		<compendium display="false" />
+		<supports>Rhinox</supports>
+		<description>
+			<p>Your Strength score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="strength" value="1"/>
+		</rules>
+	</element>
+	
+	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_RHINOX_DEXTERITY">
+		<compendium display="false" />
+		<supports>Rhinox</supports>
+		<description>
+			<p>Your Dexterity score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="dexterity" value="1"/>
+		</rules>
+	</element>
+	
+	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_RHINOX_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Rhinox</supports>
+		<description>
+			<p>Your Constitution score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="constitution" value="1"/>
+		</rules>
+	</element>
+	
+	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_RHINOX_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Rhinox</supports>
+		<description>
+			<p>Your Intelligence score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="intelligence" value="1"/>
+		</rules>
+	</element>
+	
+	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_RHINOX_WISDOM">
+		<compendium display="false" />
+		<supports>Rhinox</supports>
+		<description>
+			<p>Your Wisdom score increases by 1.</p>
+		</description>
+		<rules>
+			<stat name="wisdom" value="1"/>
+		</rules>
+	</element>
+	
+</elements>
